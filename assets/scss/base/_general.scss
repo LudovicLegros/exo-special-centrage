@@ -1,0 +1,62 @@
+@use "../abstract/variable" as var;
+
+body{
+    
+    
+    margin:3rem 0;
+
+}
+
+section{
+    padding: 3rem 2rem;
+}
+
+section:nth-child(2n){
+    background-color: var.$couleur-principale;
+    color:lightgrey;
+    a{
+        color:lightcyan;
+    }
+}  
+
+// -----------------------------------------------
+// PREMIERE SECTION BLOC
+#bloc{
+
+}
+
+// DEUXIEME SECTION AVEC BLOC LIMITé
+#bloc_sized h2{
+    width: 8rem;
+
+}
+
+// TROISIEME SECTION AVEC ABSOLU
+#absolu{
+
+}
+
+// QUATRIEME SECTION AVEC CENTRAGE HORIZONTAL ET VERTICAL
+#img{
+    height: 50vh;
+}
+
+// CINQUIEME SECTION AVEC MULTIPLE HORIZONTAL
+#multiple_vertical{
+
+    div{
+        background-color: bisque;
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+    
+    }
+}
+
+// SIXIEME SECTION AVEC MULTIPLE VERTICAL
+#multiple_horizontal{
+    height: 10vh;
+    
+
+ 
+}

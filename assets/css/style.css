@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 3rem 0;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+section:nth-child(2n) {
+  background-color: rgb(53, 42, 63);
+  color: lightgrey;
+}
+section:nth-child(2n) a {
+  color: lightcyan;
+}
+
+#bloc_sized h2 {
+  width: 8rem;
+}
+
+#img {
+  height: 50vh;
+}
+
+#multiple_vertical div {
+  background-color: bisque;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+}
+
+#multiple_horizontal {
+  height: 10vh;
+}
+
+/*# sourceMappingURL=style.css.map */
