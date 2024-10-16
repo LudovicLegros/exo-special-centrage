@@ -22,27 +22,39 @@ section:nth-child(2n){
 // -----------------------------------------------
 // PREMIERE SECTION BLOC
 #bloc{
-
+text-align: center;
 }
 
 // DEUXIEME SECTION AVEC BLOC LIMITé
 #bloc_sized h2{
     width: 8rem;
-
+    margin: auto;
 }
 
 // TROISIEME SECTION AVEC ABSOLU
 #absolu{
-
+    position: relative;
+    h2{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 // QUATRIEME SECTION AVEC CENTRAGE HORIZONTAL ET VERTICAL
 #img{
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // CINQUIEME SECTION AVEC MULTIPLE HORIZONTAL
 #multiple_vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     div{
         background-color: bisque;
@@ -56,7 +68,14 @@ section:nth-child(2n){
 // SIXIEME SECTION AVEC MULTIPLE VERTICAL
 #multiple_horizontal{
     height: 10vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
 
  
 }

@@ -21,14 +21,37 @@ section:nth-child(2n) a {
   color: lightcyan;
 }
 
+#bloc {
+  text-align: center;
+}
+
 #bloc_sized h2 {
   width: 8rem;
+  margin: auto;
+}
+
+#absolu {
+  position: relative;
+}
+#absolu h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 #img {
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#multiple_vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #multiple_vertical div {
   background-color: bisque;
   width: 100px;
@@ -38,6 +61,14 @@ section:nth-child(2n) a {
 
 #multiple_horizontal {
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#multiple_horizontal ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
